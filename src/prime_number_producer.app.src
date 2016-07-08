@@ -1,0 +1,23 @@
+{application, prime_number_producer,
+ [{description, "prime number generator"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { prime_number_producer_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[
+{upper_bound, 100},
+{redis_host, "localhost"},
+{redis_port, 9270},
+{redis_db, ""},
+{queue_key, ""},
+{result_set_key, ""}
+]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
